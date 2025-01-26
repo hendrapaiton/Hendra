@@ -7,7 +7,7 @@ function App() {
         </div>
         <form className="flex w-100">
           <input type="text" placeholder="Masukkan URL yang akan diproses" className="mr-2 p-2 border rounded w-full" />
-          <button type="submit" className="py-1 px-3 bg-blue-500 text-white rounded-full w-2/6">
+          <button type="submit" className="py-1 px-3 bg-blue-500 text-white rounded-full w-3/6">
             <i className="bi bi-floppy me-2"></i>
             <span>Simpan</span>
           </button>

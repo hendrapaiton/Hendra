@@ -1,2 +1,10 @@
 @import "tailwindcss";
-@import "bootstrap-icons/font/bootstrap-icons"
+@import "bootstrap-icons/font/bootstrap-icons";
+
+body {
+  font-family: "Kalam", cursive;
+}
+
+h1, button {
+  font-family: "Orbitron Variable", sans-serif;
+}
