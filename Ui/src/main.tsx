@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import '@fontsource/kalam';
-import '@fontsource-variable/orbitron';
+import '@fontsource/kalam/index.css';
+import '@fontsource-variable/orbitron/index.css';
 import './index.css'
 import App from './App.tsx'
 

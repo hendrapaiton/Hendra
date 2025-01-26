@@ -77,3 +77,6 @@ lerna-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Static folder from vite build
+static/
