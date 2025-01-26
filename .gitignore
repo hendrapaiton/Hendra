@@ -19,9 +19,9 @@ staticfiles/
 *.temp
 *.orig
 *.rej
-*.sublime-project
-*.sublime-workspace
-*.vscode/
+.sublime-project
+.sublime-workspace
+.vscode/
 .idea/
 .DS_Store
 
@@ -38,7 +38,6 @@ build/
 *.egg
 *.egg-info/
 dist/
-build/
 .eggs/
 *.manifest
 *.spec
@@ -58,3 +57,23 @@ coverage.xml
 .mypy_cache/
 .dmypy.json
 .pyre/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
