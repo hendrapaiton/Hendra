@@ -4,7 +4,7 @@ import random
 
 class Links(models.Model):
     original_url = models.URLField()
-    short_url = models.CharField(max_length=7, unique=True)
+    short_url = models.CharField(max_length=7, unique=True, blank=True)
 
     def save(self, *args, **kwargs):
         if not self.short_url:

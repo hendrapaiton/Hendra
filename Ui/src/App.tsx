@@ -8,13 +8,13 @@ function App() {
     e.preventDefault();
     try {
       const response = await fetch(
-        "/url/",
+        "/api/url/",
         {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ url }),
+          body: JSON.stringify({ 'original_url': url }),
         }
       );
       const data = await response.json();
@@ -47,7 +47,7 @@ function App() {
           </button>
         </form>
         {shortUrl && (
-          <div className="mt-4">
+          <div className="mt-4 w-100">
             <h2 className="text-lg font-semibold">Shortened URL:</h2>
             <a href={shortUrl} className="text-blue-500">
               {shortUrl}
