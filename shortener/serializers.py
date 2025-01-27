@@ -10,4 +10,4 @@ class URLSerializer(serializers.ModelSerializer):
         fields = ['id', 'original_url', 'short_url', 'full_short_url']
 
     def get_full_short_url(self, obj):
-        return f"{settings.ROOT_URL}/{obj.short_url}"
+        return f"{settings.ROOT_URL}/url/{obj.short_url}"
