@@ -1,7 +1,8 @@
-from django.urls import include
-import shortener
-
+from django.urls import include, path
+import shortener.urls
+from shortener.views import IndexView
 
 urlpatterns = [
-    '', include(shortener.urls)
+    path('', IndexView.as_view(), name='index'),
+    path('api/', include(shortener.urls))
 ]

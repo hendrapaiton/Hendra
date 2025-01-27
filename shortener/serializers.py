@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from .models import URL
+from shortener.models import Links
 
 class URLSerializer(serializers.ModelSerializer):
     class Meta:
-        model = URL
+        model = Links
         fields = ['id', 'original_url', 'short_url']
