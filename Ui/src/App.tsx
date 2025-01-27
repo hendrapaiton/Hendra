@@ -18,7 +18,7 @@ function App() {
         }
       );
       const data = await response.json();
-      setShortUrl(data.short_url);
+      setShortUrl(data.full_short_url);
     } catch (error) {
       console.error("Error shortening URL:", error);
     }
